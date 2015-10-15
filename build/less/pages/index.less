@@ -1,0 +1,251 @@
+@import "../variables";
+
+.index{
+	.header{
+		width: 100%;
+		height: 230px;
+		text-align: center;
+		padding-top: 4px;
+
+		h2{
+			color: #fff;
+			font-family: 'Roboo_Black';
+    		font-weight: 400;
+    		font-size: @font-size_36px;
+    		letter-spacing: 36*25/1000px;
+    		line-height: 48px;
+    		padding-top: 40px;
+    		text-shadow: 0px 1px 0px rgba(47, 47, 47, 1);
+
+    		b{
+    			color: #a9c1ff;
+    			display: block;
+    		}
+		}
+		.more{
+			font-size: @font-size_11px;
+			letter-spacing: 11*25/1000px;
+			font-weight: 700;
+			color: #fff;
+			line-height: 40px;
+			display: inline-block;
+			padding: 0 40px;
+			height: 40px;
+			border: 2px solid #fff;
+			border-radius: 2px; 
+			margin-top: 20px;
+			transition: all 0.1s linear;
+
+			&:hover{
+				background: #fff;
+				color: #a5a5a5;
+			}
+		}
+	}
+	.content{
+		margin-top: 20px;
+
+		&:after{
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		.left{
+			float: left;
+			width: 555px;
+			margin-right: 15px;
+
+			.post{
+				width: 100%;
+				background: #fff;
+				margin-bottom: 25px;
+				-webkit-box-shadow: 0px 1px 1px 0px rgba(209, 209, 209, 0.75);
+				-moz-box-shadow:    0px 1px 1px 0px rgba(209, 209, 209, 0.75);
+				box-shadow:         0px 1px 1px 0px rgba(209, 209, 209, 0.75);
+
+				.post_photo{
+					width: 100%;
+					height: 285px;
+					background: url(../img/post-photo.png) no-repeat center center;
+					background-size: cover;
+				}
+				.post-body{
+					padding: 30px 35px;
+					padding-bottom: 0;
+					border-bottom: 1px solid #cdcdcd;
+
+					.title{
+						font-weight: 700;
+						line-height: 24px;
+						font-size: @font-size_24px;
+						letter-spacing: 24*25/1000px;
+						text-transform: uppercase;
+						text-align: center;
+						margin-bottom: 20px;
+					}
+					.desc{
+						font-size: @font-size_14px;
+						letter-spacing: 14*25/1000px;
+						line-height: 18px;
+					}
+					.more{
+						display: block;
+						font-size: @font-size_11px;
+						letter-spacing: 11*25/1000px; 
+						width: 155px;
+						height: 40px;
+						line-height: 40px;
+						text-align: center;
+						border: 1px solid #6a81bb;
+						color: #6a81bb;
+						margin: 20px auto;
+						transition: all 0.1s linear;
+
+						&:hover{
+							color: #fff;
+							background: #6a81bb;
+							border-color: #cdcdcd;
+						}
+					}
+				}
+				.post-footer{
+					padding: 15px 35px;
+					.date{
+						color: #272727;
+						font-size: @font-size_12px;
+						letter-spacing: 12*25/1000px; 
+					}
+					.indicators{
+						float: right;
+						ul{
+							li{
+								list-style: none;
+								display: inline-block;
+								margin-right: 5px;
+
+								&:last-child{
+									margin-right: 0;
+								}
+								.icon{
+									width: 20px;
+									height: 20px;
+									border: 1px solid #bababa;
+									border-radius: 15px;
+									vertical-align: middle;
+									display: inline-block;
+
+									&:hover{
+										cursor: pointer;
+										border-color: #5887c1;
+
+										&~span{
+											color: #5887c1;
+										}
+									}
+								}
+								span{
+									display: inline-block;
+									vertical-align: middle;
+									font-size: @font-size_14px;
+									letter-spacing: 14*25/1000px;
+								}
+								&.views{
+									.icon{
+										background: url(../img/ui/Big_Eye_Watching_24.png) no-repeat center center;
+										background-size: 16px;
+
+										&:hover{
+											background: url(../img/ui/Big_Eye_Watching_24_active.png) no-repeat center center;
+											background-size: 16px;
+										}
+									}
+								}
+								&.repost{
+									.icon{
+										background: url(../img/ui/Volume_Bars_24.png) no-repeat 40% 50%;
+										background-size: 10px;
+
+										&:hover{
+											background: url(../img/ui/Volume_Bars_24_active.png) no-repeat 40% 50%;
+											background-size: 10px;
+										}
+									}
+								}
+								&.like{
+									.icon{
+										background: url(../img/ui/basic_heart.png) no-repeat 45% 60%;
+										background-size: 14px;
+
+										&:hover{
+											background: url(../img/ui/basic_heart_active.png) no-repeat 45% 60%;
+											background-size: 14px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.download_all{
+				width: 100%;
+				line-height: 50px;
+				height: 50px;
+				background: #5369a1;
+				color: #fff;
+				text-align: center;
+				transition: all 0.1s linear;
+
+				span{
+					position: relative;
+					&:before{
+						content: "";
+						position: absolute;
+						width: 22px;
+						height: 22px;
+						background: url(../img/ui/update23@2x.png) no-repeat center center;
+						background-size: cover;
+						left: -30px;
+						top: 0;
+					}
+				}
+
+				&:hover{
+					background: #6079b9;
+					cursor: pointer;
+					
+					span{
+						&:before{
+							-webkit-animation: dw_all 1s infinite linear;
+							animation: dw_all 1s infinite linear;
+						}
+					}
+				}
+				@-webkit-keyframes dw_all{
+					0% {
+						transform: rotate(0deg);
+					}
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+				@keyframes dw_all{
+					0% {
+						transform: rotate(0deg);
+					}
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+			}
+		}
+		.right{
+			float: left;
+			width: 250px;
+		}
+	}
+}
+

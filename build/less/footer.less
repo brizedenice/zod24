@@ -1,0 +1,59 @@
+@import "variables";
+
+footer{
+	padding: 6px 0;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	text-align: left;
+	a{
+		img{
+			width: 47px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		& > div{
+			display: inline-block;
+    		vertical-align: middle;
+    		margin-left: 5px;
+		}
+		.logo_name{
+			font-family: 'CaviarDreams';
+    		font-weight: 700;
+    		font-size: @font-size_24px;
+    		letter-spacing: 24*25/1000px;
+    		text-transform: uppercase;
+    		color: #17323f;
+    		line-height: 28px;
+
+    		span{
+    			&:nth-child(1){
+    				color: #0fa440;
+    			}
+    			&:nth-child(2){
+    				color: #a40f43;
+    			}
+    			&:nth-child(3){
+    				color: #0f5fa4;
+    			}
+    			
+    		}
+		}
+		.logo_desc{
+			font-family: 'CaviarDreams';
+    		font-weight: 400;
+    		font-size: @font-size_14px;
+			letter-spacing: 14*25/1000px;
+    		line-height: 18px;
+    		color: #000;
+		}
+	}
+	.footer-logo{
+		float: right;
+		width: 144px;
+		height: 39px;
+		margin-top: 3px;
+		background: url(../img/ave-art.com.png) no-repeat center center;
+		background-size: cover;
+	}
+}
