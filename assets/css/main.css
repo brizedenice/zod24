@@ -311,7 +311,7 @@ button {
 .index .content .left {
   float: left;
   width: 555px;
-  margin-right: 15px;
+  margin-right: 18px;
 }
 .index .content .left .post {
   width: 100%;
@@ -480,5 +480,432 @@ button {
 }
 .index .content .right {
   float: left;
-  width: 250px;
+  width: 249px;
+}
+.index .content .right .sitebar {
+  background: #fff;
+  margin-bottom: 14px;
+  box-shadow: 0px 1px 1px 0px rgba(209, 209, 209, 0.75);
+}
+.index .content .right .sitebar .title {
+  text-align: center;
+  color: #3f3f3f;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  line-height: 46px;
+  border-bottom: 1px solid #efefef;
+}
+.index .content .right .sitebar ul {
+  padding: 11px 18px;
+  padding-right: 20px;
+  padding-bottom: 29px;
+}
+.index .content .right .sitebar ul li {
+  color: #9f9f9f;
+  list-style: none;
+  position: relative;
+  padding-left: 12px;
+}
+.index .content .right .sitebar ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  line-height: 39px;
+  border-bottom: 1px solid #e2e2e2;
+  color: #5369a1;
+  font-size: 0.875em;
+  letter-spacing: 0.35px;
+}
+.index .content .right .sitebar ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #9f9f9f;
+}
+.index .content .right .sitebar ul li a:hover {
+  color: #6682cb;
+  text-decoration: underline;
+}
+.index .content .right .sitebar ul li .count {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -9.5px;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  border-radius: 15px;
+  border: 1px solid #d7d7d7;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.71);
+  font-size: 0.688em;
+  letter-spacing: 0.275px;
+}
+.index .content .right .sitebar_popular_posts ul {
+  padding-top: 0;
+}
+.index .content .right .sitebar_popular_posts ul li {
+  border-bottom: 1px solid #e2e2e2;
+}
+.index .content .right .sitebar_popular_posts ul li a {
+  padding-top: 11px;
+  line-height: 18px;
+  display: block;
+  border-bottom: none;
+}
+.index .content .right .sitebar_popular_posts ul li .info {
+  padding: 0px 0 5px 0;
+}
+.index .content .right .sitebar_popular_posts ul li .info .views,
+.index .content .right .sitebar_popular_posts ul li .info .reposts {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 0.75em;
+  letter-spacing: 0.3px;
+}
+.index .content .right .sitebar_popular_posts ul li .info .reposts {
+  display: inline-block;
+  vertical-align: middle;
+}
+.index .content .right .sitebar_popular_posts ul li .info .reposts:before {
+  content: "";
+  width: 13px;
+  height: 11px;
+  background: url(../img/ui/reposts_icon@2x.png) no-repeat center center;
+  background-size: contain;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-right: 7px;
+}
+.index .content .right .sitebar_popular_posts ul li .info .views {
+  margin-right: 10px;
+}
+.index .content .right .sitebar_popular_posts ul li .info .views:before {
+  content: "";
+  width: 16px;
+  height: 10px;
+  background: url(../img/ui/Big_Eye_Watching_24.png) no-repeat center center;
+  background-size: contain;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 7px;
+}
+
+.post {
+  background: #fff;
+  padding-bottom: 0;
+}
+.post .container {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+.post .nav-posts {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  height: 42px;
+  line-height: 40px;
+}
+.post .nav-posts .back-to-list-posts {
+  color: #5369a1;
+  font-size: 0.75em;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 0 48px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #dddddd;
+  box-sizing: border-box;
+  margin-top: 2px;
+}
+.post .nav-posts .back-to-list-posts:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.post .nav-posts .back-to-list-posts:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 9px;
+  background: url(../img/ui/back-to-list-posts@2x.png) no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+}
+.post .nav-posts ul {
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  padding-left: 21px;
+}
+.post .nav-posts ul li {
+  display: inline-block;
+  list-style: none;
+}
+.post .nav-posts ul li a {
+  line-height: 40px;
+  color: #5369a1;
+  font-size: 0.75em;
+  letter-spacing: 0.3px;
+}
+.post .nav-posts ul li a:hover {
+  text-decoration: underline;
+}
+.post .nav-posts ul li:after {
+  content: "/";
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+  color: #5369a1;
+  font-size: 0.75em;
+  letter-spacing: 0.3px;
+  margin-left: 3px;
+}
+.post .nav-posts ul li:last-child:after {
+  display: none;
+}
+.post img {
+  margin-bottom: 25px;
+}
+.post .post-photo {
+  padding: 25%;
+  background: url(../img/mulherxoncas.png) no-repeat center center;
+  background-size: cover;
+}
+.post .body-post h1 {
+  font-family: 'Roboo_Black';
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  font-size: 1.875em;
+  text-align: center;
+  line-height: 30px;
+  padding: 30px 0;
+  padding-top: 10px;
+}
+.post .body-post p {
+  color: #000;
+  font-size: 0.875em;
+  letter-spacing: 0.35px;
+  line-height: 22px;
+  margin-bottom: 30px;
+  padding: 0 38px;
+}
+.post .body-post b {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.post .body-post ul {
+  padding: 0 38px;
+}
+.post .body-post ul li {
+  list-style: none;
+  color: #000;
+  font-size: 0.875em;
+  letter-spacing: 0.35px;
+  line-height: 22px;
+}
+.post .utility {
+  background: #f4f4f4;
+  padding: 22px 0 10px 0;
+  margin: 0 38px;
+  border: 1px solid #c6c6c6;
+  text-align: center;
+}
+.post .utility .title {
+  text-align: center;
+  font-size: 1.125em;
+  letter-spacing: 0.45px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.post .utility .yes,
+.post .utility .no {
+  width: 140px;
+  height: 30px;
+  border: 1px solid #c6c6c6;
+  text-align: center;
+  background: #fff;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0 2px;
+  font-size: 1.125em;
+  color: #5369a1;
+}
+.post .utility .yes:hover,
+.post .utility .no:hover {
+  cursor: pointer;
+}
+.post .warning {
+  padding: 15px 38px;
+  margin-bottom: 30px;
+}
+.post .author-block {
+  text-align: center;
+  padding: 11px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.post .author-block .photo {
+  width: 106px;
+  height: 106px;
+  border-radius: 100px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+.post .author-block .info {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 20px;
+}
+.post .author-block .info .title {
+  color: #010101;
+  font-size: 1.875em;
+  letter-spacing: 0.75px;
+}
+.post .author-block .info .name {
+  color: #292929;
+  font-size: 1.125em;
+  letter-spacing: 0.45px;
+}
+.post .author-block .info ul {
+  display: block;
+  margin: 10px 0;
+}
+.post .author-block .info ul li {
+  display: inline-block;
+  list-style: none;
+}
+.post .author-block .info ul li a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  border: 1px solid #bcbcbc;
+}
+.post .author-block .info ul li a.icon_vk {
+  background: url(../img/ui/vk.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_vk:hover {
+  background: url(../img/ui/vk_active.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_fb {
+  background: url(../img/ui/f.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_fb:hover {
+  background: url(../img/ui/f_active.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_you {
+  background: url(../img/ui/youtube18.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_you:hover {
+  background: url(../img/ui/youtube18_active.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_tw {
+  background: url(../img/ui/twitter1.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_tw:hover {
+  background: url(../img/ui/twitter1_active.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_in {
+  background: url(../img/ui/instagram12.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_in:hover {
+  background: url(../img/ui/instagram12_active.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_site {
+  background: url(../img/ui/www.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon_site:hover {
+  background: url(../img/ui/www_active.png) no-repeat center center;
+}
+.post .author-block .info ul li a.icon:hover {
+  border-color: #5786c1;
+}
+.post .post-footer {
+  padding: 15px 35px;
+}
+.post .post-footer .date {
+  color: #272727;
+  font-size: 0.75em;
+  letter-spacing: 0.3px;
+}
+.post .post-footer .indicators {
+  float: right;
+}
+.post .post-footer .indicators ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.post .post-footer .indicators ul li:last-child {
+  margin-right: 0;
+}
+.post .post-footer .indicators ul li .icon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #bababa;
+  border-radius: 15px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.post .post-footer .indicators ul li .icon:hover {
+  cursor: pointer;
+  border-color: #5887c1;
+}
+.post .post-footer .indicators ul li .icon:hover ~ span {
+  color: #5887c1;
+}
+.post .post-footer .indicators ul li span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875em;
+  letter-spacing: 0.35px;
+}
+.post .post-footer .indicators ul li.views .icon {
+  background: url(../img/ui/Big_Eye_Watching_24.png) no-repeat center center;
+  background-size: 16px;
+}
+.post .post-footer .indicators ul li.views .icon:hover {
+  background: url(../img/ui/Big_Eye_Watching_24_active.png) no-repeat center center;
+  background-size: 16px;
+}
+.post .post-footer .indicators ul li.repost .icon {
+  background: url(../img/ui/Volume_Bars_24.png) no-repeat 40% 50%;
+  background-size: 10px;
+}
+.post .post-footer .indicators ul li.repost .icon:hover {
+  background: url(../img/ui/Volume_Bars_24_active.png) no-repeat 40% 50%;
+  background-size: 10px;
+}
+.post .post-footer .indicators ul li.like .icon {
+  background: url(../img/ui/basic_heart.png) no-repeat 45% 60%;
+  background-size: 14px;
+}
+.post .post-footer .indicators ul li.like .icon:hover {
+  background: url(../img/ui/basic_heart_active.png) no-repeat 45% 60%;
+  background-size: 14px;
+}
+.post .coments {
+  border-top: 1px solid #dddddd;
+  background: #efefef;
+  padding-top: 40px;
 }
