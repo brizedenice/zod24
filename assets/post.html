@@ -5,32 +5,123 @@
 	<title>Главная</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0;">
 </head>
 <body>
 
 	<header>
-		<div class="top">
-			<a href="#"> 
-				<img src="img/logo.png" alt="logo">
-				<div>
-					<p class="logo_name"><span>z</span><span>o</span><span>d</span>24.com</p>
-					<p class="logo_desc">РАЗВИТИЕ ЧЕЛОВЕКА</p>
+		<div class="desctop-header">
+			<div class="top">
+				<a href="#"> 
+					<img src="img/logo.png" alt="logo">
+					<div class="logo-info">
+						<p class="logo_name"><span>z</span><span>o</span><span>d</span>24.com</p>
+						<p class="logo_desc">РАЗВИТИЕ ЧЕЛОВЕКА</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="bottom">
+				<div class="container">
+					<nav>
+						<a href="#" class="link_home active"></a>
+						<a href="#" class="link_business">дЕЛО</a>
+						<a href="#" class="link_relations">ОТНОШЕНИЯ</a>
+						<a href="#" class="link_health">ЗДОРОВЬЕ</a>
+						<a href="#" class="link_about">О ПРОЕКТЕ</a>
+					</nav>
 				</div>
-			</a>
-		</div>
-		<div class="bottom">
-			<div class="container">
-				<nav>
-					<a href="#" class="link_home active"></a>
-					<a href="#" class="link_business">дЕЛО</a>
-					<a href="#" class="link_relations">ОТНОШЕНИЯ</a>
-					<a href="#" class="link_health">ЗДОРОВЬЕ</a>
-					<a href="#" class="link_about">О ПРОЕКТЕ</a>
-				</nav>
 			</div>
 		</div>
+
+		<div class="mobile-header">
+			<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+			<div class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+				<p>x</p>
+			</div>
+			<div class="dropdown">
+				<div class="sitebar sitebar_categories">
+					<p class="title">РУБРИКИ «РАЗВИТИЕ»</p>
+					<ul>
+						<li>
+							<a href="#">Рубрика 1</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 2</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 3</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 4</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 5</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 1</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 2</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 3</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 4</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 5</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 1</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 2</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 3</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 4</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 5</a>
+							<div class="count">10</div>
+						</li>
+					</ul>					
+				</div>
+			</div>
+			<div class="categoeies-list">
+				<ul>
+					<li class="current"><a href="#">дело</a></li>
+					<li><a href="#">развитие</a></li>
+					<li><a href="#">отношения</a></li>
+					<li><a href="#">здоровье</a></li>
+					<li><a href="#">о проекте</a></li>
+				</ul>
+			</div>
+		</div>
+		
 	</header>
 
 <div class="main post">
@@ -111,7 +202,183 @@
 			</div>
 		</div>
 	</div>
-	<div class="coments"></div>
+	<div class="coments">
+		<div class="container">
+			<div class="comment-title">
+				<hr>
+				<span>КОММЕНТАРИИ</span>
+			</div>
+			<div class="write_comments">
+				<div class="photo"><img src="img/IrTTR1_jL_k.png" alt="photo"></div>
+				<div class="form">
+					<form>
+						<textarea placeholder="Напишите свой комментарий"></textarea>
+						<input type="submit" class="btn-send" value="ОПУБЛИКОВАТЬ" />
+					</form>
+				</div>
+			</div>
+			<div class="post-comment">
+				<div class="photo"><img src="img/IrTTR1_jL_k.png" alt="photo"></div>
+				<div class="body-comment">
+					<p class="title">Рамиль Ахметгареев<span class="date">сегодня в 16:45</span></p>
+					<div class="text">
+						<p>Цепочка писем — это лидогенерирующий инструмент. Поэтому, всегда нужно нацеливаться на потенциального клиента, а не обыкновенного зеваку, впитывающего в себя любую информацию.</p>
+					</div>
+					<p class="bth-reply">ответить</p>
+				</div>
+			</div>
+			<div class="post-comment reply">
+				<div class="photo"><img src="img/IrTTR1_jL_k.png" alt="photo"></div>
+				<div class="body-comment">
+					<p class="title">Рамиль Ахметгареев<span class="date">сегодня в 16:45</span></p>
+					<div class="text">
+						<p>Цепочка писем — это лидогенерирующий инструмент. Поэтому, всегда нужно нацеливаться на потенциального клиента, а не обыкновенного зеваку, впитывающего в себя любую информацию.</p>
+					</div>
+					<p class="bth-reply">ответить</p>
+				</div>
+			</div>
+			<div class="post-comment">
+				<div class="photo"><img src="img/IrTTR1_jL_k.png" alt="photo"></div>
+				<div class="body-comment">
+					<p class="title">Рамиль Ахметгареев<span class="date">сегодня в 16:45</span></p>
+					<div class="text">
+						<p>Цепочка писем — это лидогенерирующий инструмент. Поэтому, всегда нужно нацеливаться на потенциального клиента, а не обыкновенного зеваку, впитывающего в себя любую информацию.</p>
+					</div>
+					<p class="bth-reply">ответить</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="also-read">
+		<div class="container">
+			<div class="comment-title">
+				<hr>
+				<span>ТАКЖЕ ПРОЧИТАЙТЕ</span>
+			</div>
+			<div class="body-block">
+				<a href="#" class="items">
+					<div class="photo"><img src="img/post_photo.png" alt="photo"></div>
+					<p class="title">Как перестать беспокоится и начать жить 32 случайных способа</p>
+					<div class="info">
+						<div class="views">10</div>
+						<div class="reposts">10</div>
+					</div>
+				</a>
+				<a href="#" class="items">
+					<div class="photo"><img src="img/post_photo.png" alt="photo"></div>
+					<p class="title">Как перестать беспокоится и начать жить 32 случайных способа</p>
+					<div class="info">
+						<div class="views">10</div>
+						<div class="reposts">10</div>
+					</div>
+				</a>
+				<a href="#" class="items">
+					<div class="photo"><img src="img/post_photo.png" alt="photo"></div>
+					<p class="title">Как перестать беспокоится и начать жить 32 случайных способа</p>
+					<div class="info">
+						<div class="views">10</div>
+						<div class="reposts">10</div>
+					</div>
+				</a>
+				<a href="#" class="items">
+					<div class="photo"><img src="img/post_photo.png" alt="photo"></div>
+					<p class="title">Как перестать беспокоится и начать жить 32 случайных способа</p>
+					<div class="info">
+						<div class="views">10</div>
+						<div class="reposts">10</div>
+					</div>
+				</a>
+			</div>
+			<div class="btn-download">ПОКАЗАТЬ ЕЩЕ</div>
+		</div>
+	</div>
+
+	<div class="list_headings">
+		<div class="container">
+			<div class="comment-title">
+				<hr>
+				<span>КУДА ДАЛЬШЕ?</span>
+			</div>
+			<div class="sitebar-block">
+				<div class="sitebar sitebar_categories">
+					<p class="title">РУБРИКИ «РАЗВИТИЕ»</p>
+					<ul>
+						<li>
+							<a href="#">Рубрика 1</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 2</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 3</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 4</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 5</a>
+							<div class="count">10</div>
+						</li>
+					</ul>					
+				</div>
+				<div class="sitebar sitebar_categories">
+					<p class="title">РУБРИКИ «РАЗВИТИЕ»</p>
+					<ul>
+						<li>
+							<a href="#">Рубрика 1</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 2</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 3</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 4</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 5</a>
+							<div class="count">10</div>
+						</li>
+					</ul>					
+				</div>
+				<div class="sitebar sitebar_categories">
+					<p class="title">РУБРИКИ «РАЗВИТИЕ»</p>
+					<ul>
+						<li>
+							<a href="#">Рубрика 1</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 2</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 3</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 4</a>
+							<div class="count">10</div>
+						</li>
+						<li>
+							<a href="#">Рубрика 5</a>
+							<div class="count">10</div>
+						</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 		
 <footer>
@@ -127,10 +394,13 @@
 	</div>
 </footer>
 
+<div class="mask"></div>
+
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/SmoothScroll.js"></script>
 <script src="js/jquery.autosize.js"></script>
 <script src="js/parallax_scroll.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
 <script src="js/main.js"></script>
 
 </body>
